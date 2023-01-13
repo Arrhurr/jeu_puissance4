@@ -1,0 +1,275 @@
+[
+    {
+        "test_num":1,
+        "test_label":"Test affichage",
+        "file_name":"afficherPlateau.c",
+        "goal": {
+            "type": "char",
+            "val":"  1   2   3   4   5   6   7 \n+---+---+---+---+---+---+---+\n|   |   |   |   |   |   |   |\n+---+---+---+---+---+---+---+\n|   |   |   |   |   |   |   |\n+---+---+---+---+---+---+---+\n|   |   |   |   |   |   |   |\n+---+---+---+---+---+---+---+\n|   |   |   |   |   |   |   |\n+---+---+---+---+---+---+---+\n|   |   |   |   |   |   |   |\n+---+---+---+---+---+---+---+\n|   |   |   |   |   |   |   |\n+---+---+---+---+---+---+---+"},
+        "args":{
+            "type":"grille",
+            "val":"[[' ',' ',' ',' ',' ',' ',' '],[' ',' ',' ',' ',' ',' ',' '],[' ',' ',' ',' ',' ',' ',' '],[' ',' ',' ',' ',' ',' ',' '],[' ',' ',' ',' ',' ',' ',' '],[' ',' ',' ',' ',' ',' ',' ']]"
+
+        } 
+        },
+    {
+        "test_num":2,
+        "test_label":"Grille pleine",
+        "file_name":"grillePleine.c",
+        "goal":{
+            "type":"int",
+            "val" : "1"
+        },
+        "args":{
+            "type":"grille",
+            "val" : "[['O','X','O','X','O','X','O'],['O','X','O','X','O','X','O'],['X','O','X','O','X','O','X'],['X','O','X','O','X','O','X'],['O','X','O','X','O','X','O'],['O','X','O','X','O','X','O']]"
+        }
+    },
+    {
+        "test_num":3,
+        "test_label":"Grille pas pleine",
+        "file_name":"grillePleine.c",
+        "goal":{
+            "type":"int",
+            "val" : "0"
+        },
+        "args":{
+            "type":"grille",
+            "val" : "[[' ',' ',' ',' ',' ',' ',' '],['O','X','O','X','O','X','O'],['X','O','X','O','X','O','X'],['X','O','X','O','X','O','X'],['O','X','O','X','O','X','O'],['O','X','O','X','O','X','O']]"
+        }
+    },
+    {
+        "test_num":4,
+        "test_label":"rentrer un jeton J1",
+        "file_name":"jouer.c",
+        "goal":[{
+            "type":"grille",
+            "val":"[['X',' ',' ',' ',' ',' ',' '],['O','X','O','X','O','X','O'],['X','O','X','O','X','O','X'],['X','O','X','O','X','O','X'],['O','X','O','X','O','X','O'],['O','X','O','X','O','X','O']]"
+        },
+        {
+            "type":"int",
+            "val":"0"
+        },
+        {
+            "type":"int",
+            "val":"1"
+        }
+    ],
+        "args":[
+            {
+                "type":"grille",
+                "val":"[[' ',' ',' ',' ',' ',' ',' '],['O','X','O','X','O','X','O'],['X','O','X','O','X','O','X'],['X','O','X','O','X','O','X'],['O','X','O','X','O','X','O'],['O','X','O','X','O','X','O']]"
+            },
+            {
+                "type":"char",
+                "val":"X"
+            }
+        ]
+    },
+    {
+        "test_num":5,
+        "test_label":"rentrer un jeton J2",
+        "file_name":"jouer.c",
+        "goal":[{
+            "type":"grille",
+            "val":"[['X','O',' ',' ',' ',' ',' '],['O','X','O','X','O','X','O'],['X','O','X','O','X','O','X'],['X','O','X','O','X','O','X'],['O','X','O','X','O','X','O'],['O','X','O','X','O','X','O']]"
+        },
+        {
+            "type":"int",
+            "val":"0"
+        },
+        {
+            "type":"int",
+            "val":"2"
+        }
+        ],
+        "args":[
+            {
+                "type":"grille",
+                "val":"[['O',' ',' ',' ',' ',' ',' '],['O','X','O','X','O','X','O'],['X','O','X','O','X','O','X'],['X','O','X','O','X','O','X'],['O','X','O','X','O','X','O'],['O','X','O','X','O','X','O']]"
+            },
+            {
+                "type":"char",
+                "val":"O"
+            },
+        ]
+    },
+    {
+        "test_num":6,
+        "test_label":"règle",
+        "file_name":"choisirColonne.c",
+        "goal":{
+            "type":"char[153]",
+            "val":"Le but du puissance 4 est d'aligner 4 jeton du même joueur à l'horizontal, à la vertical et en diagonale sans laisser l'adversaire aligner ses 4 jetons."
+        },
+        "args":[
+            {
+                "type":"grille",
+                "val":"[['O','X',' ',' ',' ',' ',' '],['O','X','O','X','O','X','O'],['X','O','X','O','X','O','X'],['X','O','X','O','X','O','X'],['O','X','O','X','O','X','O'],['O','X','O','X','O','X','O']]"
+            },
+            {
+                "type":"char",
+                "val":"O"
+            },
+            {
+                "type":"int",
+                "val":"0"
+            }
+        ]
+    },
+    {
+        "test_num":7,
+        "test_label":"fin de la partie",
+        "file_name":"choisirColonne.c",
+        "goal":{
+            "type":"char[4]",
+            "val":"Fin"
+        },
+        "args":[
+            {
+                "type":"grille",
+                "val":"[['O','X',' ',' ',' ',' ',' '],['O','X','O','X','O','X','O'],['X','O','X','O','X','O','X'],['X','O','X','O','X','O','X'],['O','X','O','X','O','X','O'],['O','X','O','X','O','X','O']]"
+            },
+            {
+                "type":"char",
+                "val":"O"
+            },
+            {
+                "type":"int",
+                "val":"-1"
+            }
+        ]
+    },
+    {
+        "test_num":8,
+        "test_label":"colonne pleine",
+        "file_name":"trouverLigne.c",
+        "goal":{
+            "type":"int",
+            "val":"-1"
+        },
+        "args":[
+            {
+                "type":"grille",
+                "val":"[['O','X',' ',' ',' ',' ',' '],['O','X','O','X','O','X','O'],['X','O','X','O','X','O','X'],['X','O','X','O','X','O','X'],['O','X','O','X','O','X','O'],['O','X','O','X','O','X','O']]"
+            },
+            {
+                "type":"int",
+                "val":"1"
+            }
+        ]
+    },
+    {
+        "test_num":9,
+        "test_label":"colonne avec de la place",
+        "file_name":"trouverLigne.c",
+        "goal":{
+            "type":"int",
+            "val":"0"
+        },
+        "args":[
+            {
+                "type":"grille",
+                "val":"[['O','X',' ',' ',' ',' ',' '],['O','X','O','X','O','X','O'],['X','O','X','O','X','O','X'],['X','O','X','O','X','O','X'],['O','X','O','X','O','X','O'],['O','X','O','X','O','X','O']]"
+            },
+            {
+                "type":"int",
+                "val":"3"
+            }
+        ]
+    },
+    {
+        "test_num":10,
+        "test_label":"Pas de gagnant",
+        "file_name":"estVainqueur.c",
+        "goal":{
+            "type":"int",
+            "val":"1"
+        },
+        "args":[
+            {
+                "type":"grille",
+                "val":"[['O','X',' ',' ',' ',' ',' '],['O','X','O','X','O','X','O'],['X','O','X','O','X','O','X'],['X','O','X','O','X','O','X'],['O','X','O','X','O','X','O'],['O','X','O','X','O','X','O']]"
+            },
+            {
+                "type":"int",
+                "val":"0"
+            },
+            {
+                "type":"int",
+                "val":"2"
+            }
+        ]
+    },
+    {
+        "test_num":11,
+        "test_label":"Gagnant horizontal",
+        "file_name":"estVainqueur.c",
+        "goal":{
+            "type":"int",
+            "val":"0"
+        },
+        "args":[
+            {
+                "type":"grille",
+                "val":"[['O','O','O','O',' ',' ',' '],['O','X','O','X','O','X','O'],['X','O','X','O','X','O','X'],['X','O','X','O','X','O','X'],['O','X','O','X','O','X','O'],['O','X','O','X','O','X','O']]"
+            },
+            {
+                "type":"int",
+                "val":"0"
+            },
+            {
+                "type":"int",
+                "val":"1"
+            }
+        ]
+    },
+    {
+        "test_num":12,
+        "test_label":"gagnant vertical",
+        "file_name":"estVainqueur.c",
+        "goal":{
+            "type":"int",
+            "val":"0"
+        },
+        "args":[
+            {
+                "type":"grille",
+                "val":"[['O','X',' ',' ',' ',' ',' '],['O','X','O','X','O','X','O'],['O','O','X','O','X','O','X'],['O','O','X','O','X','O','X'],['O','X','O','X','O','X','O'],['O','X','O','X','O','X','O']]"
+            },
+            {
+                "type":"int",
+                "val":"0"
+            },
+            {
+                "type":"int",
+                "val":"1"
+            }
+        ]
+    },
+    {
+        "test_num":13,
+        "test_label":"Gagnant diagonale",
+        "file_name":"estVainqueur.c",
+        "goal":{
+            "type":"int",
+            "val":"1"
+        },
+        "args":[
+            {
+                "type":"grille",
+                "val":"[['O','X',' ',' ',' ',' ',' '],['O','O','O','X','O','X','O'],['X','O','O','O','X','O','X'],['X','O','X','O','X','O','X'],['O','X','O','X','O','X','O'],['O','X','O','X','O','X','O']]"
+            },
+            {
+                "type":"int",
+                "val":"0"
+            },
+            {
+                "type":"int",
+                "val":"1"
+            }
+        ]
+    },
+    
+
+]

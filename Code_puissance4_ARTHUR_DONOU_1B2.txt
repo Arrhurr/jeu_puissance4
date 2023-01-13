@@ -1,0 +1,60 @@
+constante entier NL:=6;
+constante entier NC:=7;
+constante entier J1:=1;
+constante entier J2:=2;
+constante entier REGLE:=0;
+constante entier FIN:=-1;
+constante entier VIDE :=0;
+constante entier DEBUT :=1;
+constante entier J1GAGNE:=2;
+constante entier J2GAGNE := 3;
+constante entier PLATEAUPLEIN := 4;
+constante entier FINTOT := 5;
+
+type grille=tableau[1..NC,1..NL] de entier;
+
+procédure afficherPlateau(entF plateau:grille[]);
+procédure rentrerJeton(entF/sortF plateau:grille[],entF joueur:entier,entF fin:booléen);
+procédure initPlateau(sortF plateau:grille[]);
+procédure afficherPhase(entF phase:entier);
+fonction verifierGagnant(entF plateau:grille[],entF joueur:entier) délivre booléen;
+fonction verifierPlateauPlein(entF plateau:grille[]) délivre booléen;
+
+programme puissance4 c'est
+début
+    plateau:grille;
+    j1Gagne:booléen;
+    j2Gagne:booléen;
+    griellePleine:booléen;
+    fin=booléen;
+    j1Gagne:=faux;
+    j2Gagne:=faux;
+    grillePleine:=faux;
+    fin:=faux;
+    initPlateau(sortE plateau);
+    afficherPhase(entE DEBUT);
+    afficherPlateau(entE plateau)
+    tant que (j1Gagne==faux ET j2Gagne==faux ET grillePleine==faux ET fin==faux) faire
+        rentrerJeton(entE/sortE plateau,entE J1,sortE fin);
+        si (fin==faux) alors
+            afficherPlateau(entE plateau);
+            j1Gagne:=verifierGagnant(entE plateau,entE J1);
+            rentrerJeton(entE/sortE plateau,entE J2);
+            si (fin==faux) alors
+                afficherPlateau(entE plateau);
+                j2Gagne:=verifierGagnant(entE plateau,entE J2,sortE fin);
+                grillePleine:=verifierPlateauPlein(entF plateau);
+            finsi
+        finsi
+    finfaire
+    si (j1Gagne==vrai) alors
+        afficherPhase(entE J1GAGNE);
+    sinonsi(j2Gagne==vrai) alors
+        afficherPhase(entE J2GAGNE);
+    sinon si (grillePleine==vrai) alors
+        afficherPhase(entE PLATEAUPLEIN);
+    sinon
+        afficherPhase(entE FINTOT);
+    finsi
+fin
+

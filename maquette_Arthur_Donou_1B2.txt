@@ -1,0 +1,219 @@
+Maquette puissance 4 SAE 1.01:
+
+Début de partie :
+
+Votre partie de puissance 4 va commencer...
+
+Les jetons du joueur 1 sont représentés par : 0
+Les jetons du joueur 2 sont représentés par : X
+
+Pour visionner les règles taper 0 quand c'est à votre tour et pour arrêter la partie taper -1 à votre tour.
+
+Bonne partie et que le meilleur gagne.
+
+Joueur 1 : Dans quelle colonne voulez vous mettre votre jeton ? :
+
+
+Tableau vide :
+
+  1   2   3   4   5   6   7
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+
+Représentation jeton joueur 1 :
+
++---+
+| 0 |
++---+
+
+Représentation jeton joueur 2 :
+
++---+
+| X |
++---+
+
+Question posée au tour de chaque joueur :
+
+Joueur 1 : Dans quelle colonne voulez vous mettre votre jeton ? :
+
+
+
+Joueur 2 : Dans quelle colonne voulez vous mettre votre jeton ? :
+
+Partie en cours :
+
+  1   2   3   4   5   6   7
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+| 0 |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+| X | X |   |   |   |   |   |
++---+---+---+---+---+---+---+
+| X | 0 | X | 0 | 0 |   |   |
++---+---+---+---+---+---+---+
+| X | 0 | 0 | 0 | X |   |   |
++---+---+---+---+---+---+---+
+
+Joueur 2 : Dans quelle colonne voulez vous mettre votre jeton ? : 3
+
+  1   2   3   4   5   6   7
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+| 0 |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+| X | X | X |   |   |   |   |
++---+---+---+---+---+---+---+
+| X | 0 | X | 0 | 0 |   |   |
++---+---+---+---+---+---+---+
+| X | 0 | 0 | 0 | X |   |   |
++---+---+---+---+---+---+---+
+
+Joueur 1 : Dans quelle colonne voulez vous mettre votre jeton ? : 5
+
+  1   2   3   4   5   6   7
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+| 0 |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+| X | X | X |   | 0 |   |   |
++---+---+---+---+---+---+---+
+| X | 0 | X | 0 | 0 |   |   |
++---+---+---+---+---+---+---+
+| X | 0 | 0 | 0 | X |   |   |
++---+---+---+---+---+---+---+
+
+Joueur 2 : Dans quelle colonne voulez vous mettre votre jeton ? : 4
+
+  1   2   3   4   5   6   7
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+| 0 |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+| X | X | X | x | 0 |   |   |
++---+---+---+---+---+---+---+
+| X | 0 | X | 0 | 0 |   |   |
++---+---+---+---+---+---+---+
+| X | 0 | 0 | 0 | X |   |   |
++---+---+---+---+---+---+---+
+
+Quand une pertie est gagné :
+
+  1   2   3   4   5   6   7
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+| 0 |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+| X | X | X | x | 0 |   |   |
++---+---+---+---+---+---+---+
+| X | 0 | X | 0 | 0 |   |   |
++---+---+---+---+---+---+---+
+| X | 0 | 0 | 0 | X |   |   |
++---+---+---+---+---+---+---+
+
+Le joueur 2 gagne !
+*Fin du programme*
+
+Quand le joueur demande les règle :
+
+Joueur 1 : Dans quelle colonne voulez vous mettre votre jeton ? : 0
+
+Le but du puissance 4 est d'aligner 4 jeton du même joueur à l'horizontal, à la vertical et en diagonale sans laisser l'adversaire aligner ses 4 jetons.
+
+Joueur 1 : Dans quelle colonne voulez vous mettre votre jeton ? :
+
+En cas d'erreur :
+
+
+Joueur 1 : Dans quelle colonne voulez vous mettre votre jeton ? : 8
+
+  1   2   3   4   5   6   7
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   |   |   |   |   |   |   |
++---+---+---+---+---+---+---+
+
+Joueur 1 : Dans quelle colonne voulez vous mettre votre jeton ? : (répétition en boucle jusqu'à ce que le nombre donné soit entre 1 et 7 ou que se soit les règles ou la partie arrêter.)
+
+ou
+
+
+  1   2   3   4   5   6   7
++---+---+---+---+---+---+---+
+|   | X |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   | 0 |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   | X |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   | 0 |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   | X |   |   |   |   |   |
++---+---+---+---+---+---+---+
+|   | 0 |   |   |   |   |   |
++---+---+---+---+---+---+---+
+
+Joueur 1 : Dans quelle colonne voulez vous mettre votre jeton ? : 2
+
+Colonne pleine.
+
+Joueur 1 : Dans quelle colonne voulez vous mettre votre jeton ? : (répétition jusqu'à ce que le joueur donne une colonne vide.)
+
+En cas de tableau plein :
+
+Joueur 2 : Dans quelle colonne voulez vous mettre votre jeton ? : 2
+
+  1   2   3   4   5   6   7
++---+---+---+---+---+---+---+
+| 0 | X | 0 | X | 0 | X | 0 |
++---+---+---+---+---+---+---+
+| 0 | X | 0 | X | 0 | X | X |
++---+---+---+---+---+---+---+
+| X | 0 | X | 0 | X | 0 | X |
++---+---+---+---+---+---+---+
+| X | 0 | X | 0 | X | 0 | X |
++---+---+---+---+---+---+---+
+| 0 | X | 0 | X | 0 | X | 0 |
++---+---+---+---+---+---+---+
+| 0 | X | 0 | X | 0 | X | 0 |
++---+---+---+---+---+---+---+
+
+
+Tableau plein, il n'y a pas de gagnant, c'est un match nul.
+
+
+Arthur Donou 1B2
